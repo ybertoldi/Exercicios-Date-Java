@@ -8,7 +8,7 @@ public class DateMain {
 
 	public static void main(String[] args) {
 		DateTimeFormatter formataBr = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate a = LocalDate.parse("2024-10-11");
+		LocalDate a = LocalDate.parse("11/10/2024", formataBr);
 		LocalDate b =  LocalDate.now();
 		
 		System.out.println("a: " + formataBr.format(a));
